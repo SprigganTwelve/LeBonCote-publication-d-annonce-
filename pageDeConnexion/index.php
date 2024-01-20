@@ -1,7 +1,7 @@
 <?php
 
 if($_POST){
-    include("connectDb.php");
+    include("../include/connectDb.php");
     $query = mysqli_query("select * from connexion");
     $account = mysqli_fetch_assoc($query);
     while($information = $account){
