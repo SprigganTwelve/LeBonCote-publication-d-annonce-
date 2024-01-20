@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  border: 2px solid blue;
+  background: rgb(64, 112, 244);
+}
+
+.container form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  padding: 20px;
+  font-size: 25px;
+  align-items: center;
+  background: white;
+  height: 700px;
+}
+
+.container form > .title {
+  font-size: 30px;
+}
+
+.container form input {
+  padding: 10px;
+  width: 300px;
+  font-size: 25px;
+}
+
+.container form #send {
+  background-color: rgb(1, 113, 211);
+  color: white;
+  border: none;
+  outline: 0;
+  padding: 10px;
+}
+
+.container form #link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container .account {
+  font-size: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container form #link * {
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.container form #link > a {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.container form #link > a + a {
+  background-color: rgb(253, 0, 4);
+  color: white;
+  outline: none;
+  border: none;
+}
