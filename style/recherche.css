@@ -15,8 +15,8 @@ header {
   padding: 20px 10px;
   width: 100%;
   z-index: 1;
-
   transition: 0.5s;
+  background-color: white;
 }
 
 header form {
@@ -44,4 +44,69 @@ header form #send {
   outline: 0;
   padding: 10px;
   transition: all 0.5s;
+}
+
+header form #send:hover {
+  background-color: #e2e7f7;
+  color: #5771be;
+}
+
+.container {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.container .filter button {
+  background-color: #6f90f3;
+  color: white;
+  border: none;
+  outline: 0;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+
+.container .filter button:hover {
+  background-color: #e2e7f7;
+  color: #5771be;
+}
+
+.container .sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.container .sections section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.container .sections section img {
+  width: 300px;
+  height: 337px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.container .sections section .titre {
+  font-size: large;
+  font-weight: bold;
+}
+
+.container .sections section .prix {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.container .sections section .date {
+  font-style: italic;
 }
