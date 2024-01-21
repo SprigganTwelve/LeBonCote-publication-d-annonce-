@@ -8,6 +8,20 @@
   text-decoration: none;
 }
 
+.logo {
+  position: absolute;
+  color: white;
+  margin: 20px 30px;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   justify-content: center;

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Poppins:ital,wght@0,300;0,400;1,200&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #1111;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  padding: 20px 10px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #6f90f3;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.btn-pub {
+  padding: 10px 20px;
+  background: #6f90f3;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+.btn-pub:hover {
+  background: #6f90f3;
+  transition: ease-out;
+}
+
+header .navbar li a:hover {
+  color: #6f90f3;
+  border-bottom: 2px solid #1f55f7;
+}
+
+.banniere {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banniere .contenu {
+  max-width: 70%;
+  text-align: center;
+}
+
+.banniere .contenu h3 {
+  color: #000000;
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.contenu p:nth-child(2) {
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.btn1 {
+  font-size: 1em;
+  color: #fff;
+  background: #6f90f3;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn1:hover {
+  letter-spacing: 4px;
+}

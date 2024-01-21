@@ -62,12 +62,13 @@ function thereAreErrors($errorMessage)
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
+  <a class="logo" href="../home/index.html">LeBonCôté</a>
   <div class="container">
-    <form action="" method="POST">
+    <form action="" method="post">
       <strong class="title">S'inscrire</strong>
 
       <input type="text" name="nom" placeholder="Nom" value="<?php echo @$nom ?>" />
@@ -75,9 +76,9 @@ function thereAreErrors($errorMessage)
       <input type="email" name="email" placeholder="Email" required value="<?php echo @$email ?>" />
       <input type="password" name="password" placeholder="Mot de passe" required />
       <input type="password" name="passwordconfirm" placeholder="Confirmer mot de passe" required />
-      <input type="submit" id="send" name="submit" />
-      <span class="account">Vous avez déja un compte ? <br />
-        <a style="color: blue" href="http://localhost/PROJET/projectDB/connexion/connexion.php">se connecter</a>
+      <input type="submit" id="send" name="submit" value="Envoyer" />
+      <span class="account">Vous avez déja un compte ?<a style="color: blue" href="../connexion/connexion.php">se
+          connecter</a>
       </span>
 
       <div id="link">
