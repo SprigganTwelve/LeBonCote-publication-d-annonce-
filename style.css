@@ -45,14 +45,18 @@
   outline: 0;
   padding: 10px;
   font-size: 20px;
+  transition: all 0.5s;
+}
+
+.container form #send:hover {
+  background-color: rgb(197, 221, 242);
+  color: rgb(3, 62, 112);
 }
 
 .container form #link {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  justify-content: center;
-  align-items: center;
 }
 
 .container .account {
@@ -70,7 +74,9 @@ a:hover {
 
 .container form #link * {
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
 }
 
 .container form #link > a {
