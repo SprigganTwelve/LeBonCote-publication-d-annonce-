@@ -1,29 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  border: 2px solid blue;
   background: rgb(64, 112, 244);
+  gap: 50px;
 }
 
 .container form {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border: none;
   padding: 20px;
-  font-size: 25px;
   align-items: center;
   background: white;
-  height: 700px;
 }
 
 .container form > .title {
@@ -33,7 +36,6 @@
 .container form input {
   padding: 10px;
   width: 300px;
-  font-size: 25px;
 }
 
 .container form #send {
@@ -42,20 +44,28 @@
   border: none;
   outline: 0;
   padding: 10px;
+  font-size: 20px;
 }
 
 .container form #link {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .account {
-  font-size: 20px;
   margin: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .container form #link * {
@@ -75,4 +85,10 @@
   color: white;
   outline: none;
   border: none;
+}
+
+.container .errors {
+  background-color: red;
+  color: white;
+  padding: 20px;
 }
