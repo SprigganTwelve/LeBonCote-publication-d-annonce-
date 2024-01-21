@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(64, 112, 244);
+  background: #6f90f3;
   gap: 50px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .container form #send {
-  background-color: rgb(1, 113, 211);
+  background-color: #6f90f3;
   color: white;
   border: none;
   outline: 0;

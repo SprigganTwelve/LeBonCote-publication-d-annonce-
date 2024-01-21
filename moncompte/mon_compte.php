@@ -20,6 +20,7 @@ if (!isset($_SESSION['user_id'])) {
 
 <body>
     <div>MON COMPTE</div>
+    <span><a href="../recherche/recherche.php">RECHERCHE</a></span>
     <span><a href="logout.php">Se déconnecter</a></span>
 </body>
 
