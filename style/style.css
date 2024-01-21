@@ -63,8 +63,8 @@
 }
 
 .container form #send:hover {
-  background-color: rgb(197, 221, 242);
-  color: rgb(3, 62, 112);
+  background-color: #e2e7f7;
+  color: #5771be;
 }
 
 .container form #link {
