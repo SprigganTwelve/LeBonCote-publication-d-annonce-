@@ -38,17 +38,34 @@ $search = trim($_POST['search']);
             <button>FILTRER</button>
         </div>
         <div class="sections">
-            <section>
-                <div class="user">
-                    <img src="../image/avatar.jpg">
-                    <span>ryomen</span>
-                </div>
-                <img class="photo" src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
+            <?php
+            if (isset($_POST['submit'])) {
+                $query = mysqli_query($connexion, "SELECT * FROM `annonces` WHERE INSTR(titre,'$search')>0 OR INSTR(description,'$search')>0 OR INSTR(categorie,'$search')>0") or die('Requete échouée');
+                while ($row = mysqli_fetch_assoc($query)) {
+                    $image = $row["image"];
+                    $titre = $row["titre"];
+                    $prix = $row["prix"];
+                    $date_publication = $row["date_publication"];
 
+                    $user_id = $row["user_id"];
+                    $queryUser = mysqli_query($connexion, "SELECT * FROM `utilisateurs` WHERE id=$user_id") or die('Requete échouée');
+                    $user = mysqli_fetch_assoc($queryUser);
+                    $userNom = $user['nom'];
+                    $userPrenom = $user['prenom'];
+
+                    echo '<section>
+                            <div class="user">
+                                <img src="../image/avatar.jpg">
+                                <span>' . $userNom . ' ' . $userPrenom . '</span>
+                            </div>
+                            <img class="photo" src="../image' . $image . ' alt="PHOTO ARTICLE">
+                            <span class="titre">' . $titre . '</span>
+                            <span class="prix">' . $prix . ' €</span>
+                            <span class="date">' . $date_publication . '</span>
+                        </section>';
+                }
+
+            } ?>
         </div>
     </div>
 

@@ -107,6 +107,7 @@ header form #send:hover {
   height: 337px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 6px 5px 5px #dbe1f1;
 }
 
 .container .sections section .titre {
