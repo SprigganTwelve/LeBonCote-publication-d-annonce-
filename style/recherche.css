@@ -89,8 +89,20 @@ header form #send:hover {
   flex-direction: column;
   gap: 4px;
 }
+.container .sections section .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
 
-.container .sections section img {
+.container .sections section .user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.container .sections section .photo {
   width: 300px;
   height: 337px;
   object-fit: cover;

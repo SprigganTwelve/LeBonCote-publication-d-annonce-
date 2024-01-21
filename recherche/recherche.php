@@ -1,3 +1,8 @@
+<?php
+include("../config/connectDb.php");
+$search = trim($_POST['search']);
+?>
+
 <html lang="en">
 
 <head>
@@ -34,143 +39,16 @@
         </div>
         <div class="sections">
             <section>
-                <img src="../image/nintendo_switch2.jpg">
+                <div class="user">
+                    <img src="../image/avatar.jpg">
+                    <span>ryomen</span>
+                </div>
+                <img class="photo" src="../image/nintendo_switch2.jpg">
                 <span class="titre">Nintendo switch fonctionne bien</span>
                 <span class="prix">200 €</span>
                 <span class="date">21/01/2024</span>
             </section>
-            <section>
-                <img src="../image/nintendo_switch1.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
-            <section>
-                <img src="../image/nintendo_switch2.jpg">
-                <span class="titre">Nintendo switch fonctionne bien</span>
-                <span class="prix">200 €</span>
-                <span class="date">21/01/2024</span>
-            </section>
+
         </div>
     </div>
 
