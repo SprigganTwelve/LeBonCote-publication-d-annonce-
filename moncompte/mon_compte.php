@@ -3,11 +3,13 @@ include("../config/connectDb.php");
 
 session_start();
 
-if (!isset($_SESSION['user_id'])) {
+$user_id = $_SESSION['user_id'];
+if (!isset($user_id)) {
     header('Location:../connexion/connexion.php');
 }
 
-
+$query = mysqli_query($connexion, "SELECT * from `utilisateurs` WHERE id=$user_id") or die("Requete échouée");
+$row = mysqli_fetch_array($query);
 ?>
 
 <html lang="en">
@@ -20,6 +22,9 @@ if (!isset($_SESSION['user_id'])) {
 
 <body>
     <div>MON COMPTE</div>
+    <h1>
+        <?php echo $row["nom"] . " " . $row["prenom"] ?>
+    </h1>
     <span><a href="../recherche/recherche.php">RECHERCHE</a></span>
     <span><a href="logout.php">Se déconnecter</a></span>
 </body>

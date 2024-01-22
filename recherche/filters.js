@@ -53,6 +53,18 @@ function sortByTimestampDescending(annonces) {
   annonces.sort((a, b) => b.timestamp - a.timestamp);
 }
 
+function filterByVehicle(annonces) {
+  return annonces.filter((annonce) => annonce.categorie === "Vehicules");
+}
+
+function filterByElectronics(annonces) {
+  return annonces.filter((annonce) => annonce.categorie === "Electronique");
+}
+
+function filterByRealEstate(annonces) {
+  return annonces.filter((annonce) => annonce.categorie === "Immobilier");
+}
+
 function createSectionsInnerHTML(annonces) {
   var result = "";
   for (var annonce of annonces) {
@@ -104,8 +116,36 @@ filterButton.addEventListener("click", () => {
       sections.append(annonce.section);
     }
   }
+  if (selectCategorie.value === "vehicule") {
+    for (let annonce of annonces) {
+      annonce.section.remove();
+    }
+    var filteredAnnoncesByVehicle = filterByVehicle(annonces);
+    for (let annonce of filteredAnnoncesByVehicle) {
+      sections.append(annonce.section);
+    }
+  }
+  if (selectCategorie.value === "electronique") {
+    for (let annonce of annonces) {
+      annonce.section.remove();
+    }
+    var filteredAnnoncesByElectronics = filterByElectronics(annonces);
+    for (let annonce of filteredAnnoncesByElectronics) {
+      sections.append(annonce.section);
+    }
+  }
+  if (selectCategorie.value === "immobilier") {
+    for (let annonce of annonces) {
+      annonce.section.remove();
+    }
+    var filteredAnnoncesByRealEstate = filterByRealEstate(annonces);
+    for (let annonce of filteredAnnoncesByRealEstate) {
+      sections.append(annonce.section);
+    }
+  }
 });
 
 console.log(annoncesSections);
 console.log(sections);
 console.log(annonces);
+console.log(filterByVehicle(annonces));
