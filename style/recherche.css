@@ -88,6 +88,7 @@ header form #send:hover {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 340px;
 }
 .container .sections section .user {
   display: flex;

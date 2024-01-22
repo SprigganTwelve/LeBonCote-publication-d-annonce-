@@ -27,7 +27,7 @@ include("../config/connectDb.php");
                 <option value="croissant">Prix croissants</option>
                 <option value="decroissant">Prix décroissants</option>
                 <option value="ancien">Plus anciennes</option>
-                <option value="rcent">Plus récentes</option>
+                <option value="recent">Plus récentes</option>
             </select>
             <select name="categorie" id="categorie">
                 <option value="">Catégorie</option>
