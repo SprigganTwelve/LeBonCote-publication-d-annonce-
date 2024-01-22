@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
 <body>
 
 
-    <a href="http://localhost/PROJET/projectDB/home/index.html" class="logo">LeBonCôté</a>
+    <a href="../home/index.php" class="logo">LeBonCôté</a>
 
     <div class="container">
         <form action="" method="post">

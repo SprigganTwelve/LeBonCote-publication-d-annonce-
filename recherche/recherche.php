@@ -15,7 +15,7 @@ include("../config/connectDb.php");
 <body>
     <header>
         <form action="" method="post">
-            <a class="logo" href="../home/index.html"><span>LeBonCôté</span></a>
+            <a class="logo" href="../home/index.php"><span>LeBonCôté</span></a>
             <input name="search" class="search" placeholder="Rechercher sur LebonCôté">
             <input type="submit" id="send" name="submit" value="RECHERCHER">
         </form>

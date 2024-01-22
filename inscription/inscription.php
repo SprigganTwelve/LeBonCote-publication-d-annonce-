@@ -66,7 +66,7 @@ function thereAreErrors($errorMessage)
 </head>
 
 <body>
-  <a class="logo" href="../home/index.html">LeBonCôté</a>
+  <a class="logo" href="../home/index.php">LeBonCôté</a>
   <div class="container">
     <form action="" method="post">
       <strong class="title">S'inscrire</strong>

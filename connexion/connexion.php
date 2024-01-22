@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <a class="logo" href="../home/index.html">LeBonCôté</a>
+    <a class="logo" href="../home/index.php">LeBonCôté</a>
     <div class="container">
         <form action="" method="post">
             <strong class="title">Connectez vous !</strong>
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
             <input name="email" type="email" placeholder="Email" required value="<?php echo @$email ?>">
             <input name="password" type="password" placeholder="Mot de passe" required>
             <input type="submit" id="send" name="submit" value="Envoyer">
-            <a style="color: blue" href="http://localhost/PROJET/projectDB/inscription/inscription.php">Vous n'avez pas
+            <a style="color: blue" href="../inscription/inscription.php">Vous n'avez pas
                 de compte ?</a>
             <a style="color: blue" href="">Mot de passe oublié ?</a>
             <div id="link">
