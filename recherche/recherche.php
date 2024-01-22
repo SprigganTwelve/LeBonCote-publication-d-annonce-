@@ -1,6 +1,6 @@
 <?php
 include("../config/connectDb.php");
-$search = trim($_POST['search']);
+@$search = trim($_POST['search']);
 ?>
 
 <html lang="en">
@@ -35,7 +35,7 @@ $search = trim($_POST['search']);
                 <option value="electronique">Electronique</option>
                 <option value="immobilier">Immobilier</option>
             </select>
-            <button>FILTRER</button>
+            <button id="filtrer">FILTRER</button>
         </div>
         <div class="sections">
             <?php
@@ -46,6 +46,7 @@ $search = trim($_POST['search']);
                     $titre = $row["titre"];
                     $prix = $row["prix"];
                     $date_publication = $row["date_publication"];
+                    $categorie = $row["categorie"];
 
                     $user_id = $row["user_id"];
                     $queryUser = mysqli_query($connexion, "SELECT * FROM `utilisateurs` WHERE id=$user_id") or die('Requete échouée');
@@ -60,15 +61,16 @@ $search = trim($_POST['search']);
                             </div>
                             <img class="photo" src="../image' . $image . ' alt="PHOTO ARTICLE">
                             <span class="titre">' . $titre . '</span>
-                            <span class="prix">' . $prix . ' €</span>
-                            <span class="date">' . $date_publication . '</span>
+                            <span class="prix" id="prix">' . $prix . ' €</span>
+                            <span class="date" id="date">' . $date_publication . '</span>
+                            <div id="categorie" style="display:none">' . $categorie . '</div>
                         </section>';
                 }
 
             } ?>
         </div>
     </div>
-
+    <script src="filters.js"></script>
 </body>
 
 </html>
