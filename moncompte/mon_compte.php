@@ -26,6 +26,7 @@ $row = mysqli_fetch_array($query);
         <?php echo $row["nom"] . " " . $row["prenom"] ?>
     </h1>
     <span><a href="../recherche/recherche.php">RECHERCHE</a></span>
+    <span><a href="update/update.php">METTRE A JOUR VOTR COMPTE ?</a></span>
     <span><a href="logout.php">Se déconnecter</a></span>
 </body>
 
