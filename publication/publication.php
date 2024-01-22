@@ -18,15 +18,13 @@ if (isset($_POST['submit'])) {
     $imagepath = $_FILES['image']['tmp_name'];
     $imagesize = $_FILES['image']['size'];
 
-    $query = mysqli_query($connexion, "INSERT INTO annonces(user_id,titre,prix,categorie,description,date_publication,image) VALUES($user_id,'$titre',$prix,'$categorie','$description',NOW(),'$image');") or die("Requete échouée");
-
     if ($imagesize > 5000000) {
         $errorMessage = "L'image ne doit pas excéder 5 MB";
     } else {
+        $query = mysqli_query($connexion, "INSERT INTO annonces(user_id,titre,prix,categorie,description,date_publication,image) VALUES($user_id,'$titre',$prix,'$categorie','$description',NOW(),'$image');") or die("Requete échouée");
         move_uploaded_file($imagepath, "../image/" . $image);
+        header("Location:../recherche/recherche.php");
     }
-    header("Location:../recherche/recherche.php");
-
 }
 
 
@@ -59,18 +57,18 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <form action="" method="post" enctype="multipart/form-data">
             <strong class="title">Publication</strong>
-            <input type="text" name="titre" placeholder="Titre">
 
             <?php if (isset($errorMessage)) {
                 echo '<div 
                 style="background-color:red; 
-                color:white; border-radius: 5px; padding: 5px">'
+                color:white; border-radius: 5px; padding: 5px; text-align:center">'
                     . $errorMessage . '</div>';
             } ?>
 
-            <input type="number" name="prix" placeholder="Prix">
+            <input type="text" name="titre" placeholder="Titre" required>
+            <input type="number" name="prix" placeholder="Prix" required>
 
-            <select name="categorie" id="categorie">
+            <select name="categorie" id="categorie" required>
                 <option value="">Catégorie</option>
                 <option value="vehicule">Vehicules</option>
                 <option value="electronique">Electronique</option>
