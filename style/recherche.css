@@ -89,7 +89,14 @@ header form #send:hover {
   flex-direction: column;
   gap: 4px;
   width: 340px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
+
+.container .sections section:hover {
+  letter-spacing: 0.2px;
+}
+
 .container .sections section .user {
   display: flex;
   flex-direction: row;
@@ -109,6 +116,12 @@ header form #send:hover {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 6px 5px 5px #dbe1f1;
+  transition: all 0.5s;
+}
+
+.container .sections section .photo:hover {
+  width: 303px;
+  height: 340px;
 }
 
 .container .sections section .titre {

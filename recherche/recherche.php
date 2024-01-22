@@ -59,7 +59,7 @@ include("../config/connectDb.php");
                                 <img src="../image/avatar.jpg">
                                 <span>' . $userNom . ' ' . $userPrenom . '</span>
                             </div>
-                            <img class="photo" src="../image' . $image . ' alt="PHOTO ARTICLE">
+                            <img class="photo" src="../image/' . $image . '" alt="PHOTO ARTICLE">
                             <span class="titre">' . $titre . '</span>
                             <span class="prix" id="prix">' . $prix . ' €</span>
                             <span class="date" id="date">' . $date_publication . '</span>

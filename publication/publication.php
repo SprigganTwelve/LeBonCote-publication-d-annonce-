@@ -11,21 +11,21 @@ if (!isset($user_id)) {
 if (isset($_POST['submit'])) {
 
     $titre = $_POST['titre'];
-    $prix = $_POST['price'];
+    $prix = $_POST['prix'];
     $categorie = $_POST['categorie'];
     $description = $_POST['description'];
     $image = $_FILES['image']['name'];
     $imagepath = $_FILES['image']['tmp_name'];
     $imagesize = $_FILES['image']['size'];
 
-    $query = mysqli_query($connexion, "INSERT INTO  annonces(titre,prix,categotie,description,image) VALUES('$nom',$prix,'$categorie','$description','$image');") or die("Requete échouée");
+    $query = mysqli_query($connexion, "INSERT INTO annonces(user_id,titre,prix,categorie,description,date_publication,image) VALUES($user_id,'$titre',$prix,'$categorie','$description',NOW(),'$image');") or die("Requete échouée");
 
     if ($imagesize > 5000000) {
-
+        $errorMessage = "L'image ne doit pas excéder 5 MB";
+    } else {
         move_uploaded_file($imagepath, "../image/" . $image);
-
-
     }
+    header("Location:../recherche/recherche.php");
 
 }
 
@@ -57,11 +57,18 @@ if (isset($_POST['submit'])) {
     <a href="../home/index.php" class="logo">LeBonCôté</a>
 
     <div class="container">
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <strong class="title">Publication</strong>
             <input type="text" name="titre" placeholder="Titre">
 
-            <input type="number" name="price" placeholder="Prix">
+            <?php if (isset($errorMessage)) {
+                echo '<div 
+                style="background-color:red; 
+                color:white; border-radius: 5px; padding: 5px">'
+                    . $errorMessage . '</div>';
+            } ?>
+
+            <input type="number" name="prix" placeholder="Prix">
 
             <select name="categorie" id="categorie">
                 <option value="">Catégorie</option>
@@ -74,9 +81,9 @@ if (isset($_POST['submit'])) {
                 style="height:170px;font-size:20px"> </textarea>
 
             <label for="image" id="file">Ajouter une image</label>
-            <input type="file" id="image" name="image" style="display:none">
+            <input type="file" id="image" name="image" style="display:none" accept="image/png, image/jpeg, image/jpg">
 
-            <input id="submit" type="submit" value="Envoyer">
+            <input id="submit" type="submit" name="submit" value="Envoyer">
 
         </form>
     </div>
