@@ -70,9 +70,9 @@ if (isset($_POST['submit'])) {
 
             <select name="categorie" id="categorie" required>
                 <option value="">Catégorie</option>
-                <option value="vehicule">Vehicules</option>
-                <option value="electronique">Electronique</option>
-                <option value="immobilier">Immobilier</option>
+                <option value="Vehicules">Vehicules</option>
+                <option value="Electronique">Electronique</option>
+                <option value="Immobilier">Immobilier</option>
             </select>
 
             <textarea type="text" name="description" placeholder="Description(500mots)"
