@@ -33,7 +33,7 @@ ce sont :
    
  ##processus
  
-      vous devrez au préalable avant d'ouvrir le site, vouus assurer vous que tout les dossiers du present dépôt (git) se trouvent 
+      vous devrez avant d'ouvrir le site, vous assurer vous que tout les dossiers du present dépôt (git) se trouvent 
       bien sur votre ordinateur dans le dossier xampp>htdocs> . si céla n'est pas fait veuillez y remedier.
       
       par suite ouvrez le logiciel xampp et demarrer les serveurs apache 
