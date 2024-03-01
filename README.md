@@ -25,13 +25,7 @@ ce sont :
       _JavaScript
       _MySQL
 
-## Installation
- ##prérequis 
- 
-   Avoir télécharger le logiciel xampp
-   Avoir une base dans l'utilisation de phpmyadmin 
-   
-## Processus
+## Processus D'Installation
 
 
 Afin de pouvoir correctement accéder au site web du projet ,nous vous prions de respecter les indications suivantes :  
