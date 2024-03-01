@@ -1,3 +1,4 @@
+
 # Projet LeBonCôté
 
 LeBonCôté est un site de petites annonces ....
@@ -5,9 +6,8 @@ LeBonCôté est un site de petites annonces ....
 ## Fonctionnalités
 
 Le BonCoté est un site basé sur de nombreux fonctionnalités 
-nous denombrons : 
-
--Un système de publication d'annonce une annonce  
+nous avons  : 
+-[x] Un système de publication d'annonce une annonce  
 -Système d'importation des images
 -Système de recherche d'annonces
 -Système de filtre d'annonces
