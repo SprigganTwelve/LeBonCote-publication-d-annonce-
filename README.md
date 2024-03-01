@@ -7,23 +7,24 @@ LeBonCôté est un site de petites annonces ....
 
 Le BonCoté est un site basé sur de nombreux fonctionnalités 
 nous avons  : 
--[x] Un système de publication d'annonce une annonce  
--Système d'importation des images
--Système de recherche d'annonces
--Système de filtre d'annonces
--Création de compte
--Gestion d'erreurs de connexion
--Capacité de mettre à jour les informations de son compte 
+* Un système de publication d'annonce une annonce  
+* Système d'importation des images
+* Système de recherche d'annonces
+* Système de filtre d'annonces
+* Création de compte
+* Gestion d'erreurs de connexion
+* Capacité de mettre à jour les informations de son compte 
 
 ## Stack technique
 
-Plusieurs langage technique ont éte utiliser pour pouvoir mettre ce site sur pied
-ce sont :
-      _PHP ( Hypertext Preprocessor )
-      _HTML (Hypertext Markup Language )
-      _CSS (style cascading sheet )
-      _JavaScript
-      _MySQL
+Plusieurs langages techniques ont étés utiliser pour pouvoir mettre ce site sur pied.
+Ce sont :
+
+- [x]  PHP ( Hypertext Preprocessor )   
+- [x] HTML (Hypertext Markup Language )
+- [x]  CSS (style cascading sheet )
+ - [x]   JavaScript
+ - [x]     MySQL
 
 ## Processus D'Installation
 
