@@ -1,7 +1,7 @@
 
 # Projet LeBonCôté
 
-LeBonCôté est un site de petites annonces ....
+Le projet LeBonCote est un projet dont l'objet est la conception d'un site web de publication d'annonce.
 
 ## Fonctionnalités
 
