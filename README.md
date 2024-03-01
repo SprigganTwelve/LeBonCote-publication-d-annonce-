@@ -42,6 +42,7 @@ ce sont :
       Après vous êtes rendu en tant que administrateur (admin) sur votre moteur de donnée relationnel (MySQL), 
       imporetr le fichier sql present dans le dossier config dans votre espace phpmyadmin. cette action aura pour objectifs de créer en local
       la base de données nécessaire à l'utilisation du site.
+      (Télécharger XAMPP)[https://www.apachefriends.org/fr/download.html] 
    
       Ensuite toujours avec votre serveur apache activé, vous devrez lancer le fichier index.php qui se trouvant dans le dossier 
       home
