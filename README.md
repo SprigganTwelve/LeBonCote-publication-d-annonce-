@@ -39,10 +39,10 @@ Afin de pouvoir correctement accéder au site web du projet ,nous vous prions de
   + Ouvrez le serveur Mysql en tant admin , vous accéderez ainsi au moteur de base de données SQL avec phpMyadmin  
    +  imporetr le fichier sql present dans le dossier config du dépôt  dans votre espace phpmyadmin. Ce qui va vous créer en local
   la base de données nécessaire à l'utilisation du site.
-+ Ensuite toujours avec votre serveur apache et MySql activés,  lancer le fichier index.php se trouvant dans le dossier home>
++ Ensuite toujours avec vos serveur apache et MySql activés,  lancer le fichier index.php se trouvant dans le dossier home>
 
 >[!IMPORTANT]  
- S'il vous semble que le fichier est inexécutable, assurez vous d'avoir remplacer dans votre url  '....htdcos/' par 'localhost' car vous utiliser XAMMP un serveur local.
+ S'il vous semble que le fichier est inexécutable et que vous ne voyez que du code dans votre navigateur , assurez vous d'avoir remplacer dans votre url  '....htdcos/' par 'localhost' car vous utiliser XAMMP un serveur local.
   
 Après avoir respecter ces étapes , il ne vous reste plus qu'a naviguer et explorer les différentes fonctionnalités offertes par notre application web.
 Bonne visite :)  
