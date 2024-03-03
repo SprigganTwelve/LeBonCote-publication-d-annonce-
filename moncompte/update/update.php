@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         $execute = mysqli_query($connexion, " UPDATE   `utilisateurs`  SET nom ='$nom', prenom='$prenom', email ='$adresse', password='$password'
     WHERE id = $user_id  ");
         echo "Reussie";
-        header("location:../../home/index.php");
+        header("location:../mon_compte.php");
     }
 
 }
