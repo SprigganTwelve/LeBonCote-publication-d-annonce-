@@ -102,7 +102,7 @@ $row = mysqli_fetch_array($query);
         </div>
         <footer>
             <ul>
-                <li><a href="">Se Déconnecter</a></li>
+                <li><a href="logout.php">Se Déconnecter</a></li>
             </ul>
         </footer>
     </div>
