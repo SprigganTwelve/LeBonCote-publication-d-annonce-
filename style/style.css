@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap");
-
+body {
+  background: #6f90f3;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,7 @@
   font-size: 2em;
   text-decoration: none;
   cursor: pointer;
+  z-index: 122;
 }
 
 .logo:hover {
@@ -26,8 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #6f90f3;
+
   gap: 50px;
 }
 
@@ -53,6 +55,7 @@
 }
 
 .container form #send {
+  position: relative;
   background-color: #6f90f3;
   color: white;
   border: none;
@@ -114,3 +117,101 @@ a:hover {
 }
 
 /*for publication */
+/*Profile*/
+.profile-avartar {
+  width: 5rem !important;
+  height: 8rem !important;
+  border-radius: 100%;
+}
+
+/*profile*/
+
+.container {
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.selfItems {
+  display: flex;
+  flex-direction: row !important;
+
+  width: 900px;
+  align-items: stretch;
+  border-radius: 20px;
+  margin: 5px;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.selfItems img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.selfItems .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(154, 183, 199);
+  border-radius: 20px 0px 0px 20px;
+}
+
+.selfItems .aboutYou,
+.foot {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.selfItems .foot div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .selfItems * {
+  padding: 10px;
+}
+
+.profileHead {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 12px;
+  color: white;
+}
+
+.title {
+  top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.infoAboutYou {
+  background-color: white;
+}
+
+/* go to publishing page or search page */
+
+.changeDirectory {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.changeDirectory * {
+  padding: 10px 20px;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: white;
+  color: #5771be;
+  font-size: 1em;
+}
