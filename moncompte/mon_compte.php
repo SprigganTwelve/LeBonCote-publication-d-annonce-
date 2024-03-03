@@ -38,7 +38,7 @@ $row = mysqli_fetch_array($query);
         <div class=" selfItems">
 
             <div class='left'>
-                <img class="profile-avatar" src="../uploadAvatar/gojo-extension-du-territoire.jpg" alt="Avatar">
+                <img class="profile-avatar" src="../image/avatar.jpg" alt="Avatar">
                 <strong class="title" style="color:white">
                     <?= $row['nom'] ?>
                 </strong>
