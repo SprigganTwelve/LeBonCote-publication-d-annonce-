@@ -27,9 +27,9 @@ $row = mysqli_fetch_array($query);
     <a href="../home/index.php" class="logo"><span>LeBonCôté</span></a>
     <ul class="changeDirectory">
 
-        <li><a href="../recherche/recherche.php">Mettre à jour mon profil</a></li>
+        <li><a href="./update/update.php">Mettre à jour mon profil</a></li>
         <li><a href="../recherche/recherche.php">Recherche</a></li>
-        <li><a href="../recherche/recherche.php">Publier</a></li>
+        <li><a href="../publication/publication.php">Publier</a></li>
     </ul>
 
     <div class="container">
@@ -40,7 +40,7 @@ $row = mysqli_fetch_array($query);
             <div class='left'>
                 <img class="profile-avatar" src="../uploadAvatar/gojo-extension-du-territoire.jpg" alt="Avatar">
                 <strong class="title" style="color:white">
-                    bertrand
+                    <?= $row['nom'] ?>
                 </strong>
             </div>
 
@@ -53,7 +53,7 @@ $row = mysqli_fetch_array($query);
                         <p>
                             Email</br>
                         <h2>
-                            dddjj@jdh
+                            <?= $row['email'] ?>
                         </h2>
                         </p>
                     </div>
@@ -62,7 +62,7 @@ $row = mysqli_fetch_array($query);
                         <p>
                             Phone</br>
                         <h2>
-                            4255537
+                            Aucun
                         </h2>
                         </p>
                     </div>
@@ -100,7 +100,11 @@ $row = mysqli_fetch_array($query);
             </div>
 
         </div>
-
+        <footer>
+            <ul>
+                <li><a href="">Se Déconnecter</a></li>
+            </ul>
+        </footer>
     </div>
 
     <?php
