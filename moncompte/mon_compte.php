@@ -46,7 +46,7 @@ $row = mysqli_fetch_array($query);
 
             <div class="infoAboutYou">
 
-                <strong class="title">Informmation</strong>
+                <strong class="title">Information</strong>
 
                 <div class='aboutYou'>
                     <div>
