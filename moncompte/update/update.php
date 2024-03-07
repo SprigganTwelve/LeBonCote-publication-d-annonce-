@@ -79,10 +79,13 @@ if (isset($_POST['submit'])) {
             <div class="form-group">
                 <label for="confirm-password">Confirmer mot de passe:</label>
                 <input type="password" name="passwordConfirm" id="confirm-password">
+                <label for="imageId" id="file">Choisir une image</label>
+                <input type="file" name="image" id="imageId" style="display:none">
             </div>
             <input id="save-changes" type="submit" name="submit" value="Sauvegarder les changements">
+        </form>
     </div>
-    </form>
+
     <script src="testing2.js"></script>
 </body>
 
