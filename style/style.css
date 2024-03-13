@@ -11,6 +11,12 @@ body {
   list-style-type: none;
 }
 
+img {
+  outline: none;
+  object-fit: cover;
+  object-position: center;
+}
+
 .logo {
   position: absolute;
   color: white;
@@ -151,9 +157,6 @@ a:hover {
 .selfItems img {
   height: 300px;
   width: 300px;
-  outline: none;
-  object-fit: cover;
-  object-position: center;
   border-radius: 50%;
 }
 

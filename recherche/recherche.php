@@ -54,9 +54,16 @@ include("../config/connectDb.php");
                     $userNom = $user['nom'];
                     $userPrenom = $user['prenom'];
 
+                    if (isset($user['image'])) {
+                        $routeName = $user['image'];
+                    } else {
+                        $routeName = "avatar.jpg";
+                    }
+
+
                     echo '<section>
                             <div class="user">
-                                <img src="../image/avatar.jpg">
+                                <img src="../image/' . $routeName . ' ">
                                 <span>' . $userNom . ' ' . $userPrenom . '</span>
                             </div>
                             <img class="photo" src="../image/' . $image . '" alt="PHOTO ARTICLE">
