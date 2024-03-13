@@ -122,7 +122,7 @@ a:hover {
 .profile-avartar {
   width: 5rem !important;
   height: 8rem !important;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 /*profile*/
@@ -149,7 +149,11 @@ a:hover {
 }
 
 .selfItems img {
+  height: 300px;
   width: 300px;
+  outline: none;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
 }
 

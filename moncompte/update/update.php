@@ -10,17 +10,19 @@ if (!isset($user_id)) {
 
 if (isset($_POST['submit'])) {
 
-
-
     $nom = $_POST["nom"];
     $adresse = $_POST["email"];
     $password = md5($_POST["password"]);
     $prenom = ($_POST['prenom']);
     $passwordConfirm = md5($_POST["passwordConfirm"]);
+
+
+    $nameImage = $_FILES['image']['name'];
+    echo $nameImage;
     if ($password === $passwordConfirm) {
-        $execute = mysqli_query($connexion, " UPDATE   `utilisateurs`  SET nom ='$nom', prenom='$prenom', email ='$adresse', password='$password'
+        $execute = mysqli_query($connexion, " UPDATE   `utilisateurs`  SET nom ='$nom', prenom='$prenom', email ='$adresse', password='$password', image= '$nameImage'
     WHERE id = $user_id  ");
-        echo "Reussie";
+        move_uploaded_file($_FILES['image']['tmp_name'], "../../image/" . $nameImage);
         header("location:../mon_compte.php");
     }
 
@@ -52,7 +54,7 @@ if (isset($_POST['submit'])) {
     </nav>
 
     <div class="container">
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <h1>Gestion du compte</h1>
             <div class="form-group">
                 <label for="prenom">Nom:</label>
@@ -79,8 +81,8 @@ if (isset($_POST['submit'])) {
             <div class="form-group">
                 <label for="confirm-password">Confirmer mot de passe:</label>
                 <input type="password" name="passwordConfirm" id="confirm-password">
-                <label for="imageId" id="file">Choisir une image</label>
-                <input type="file" name="image" id="imageId" style="display:none">
+                <label for="image" id="file">Choisir une image</label>
+                <input type="file" name="image" id="image" style="display:none;">
             </div>
             <input id="save-changes" type="submit" name="submit" value="Sauvegarder les changements">
         </form>

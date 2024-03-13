@@ -10,7 +10,8 @@ if (!isset($user_id)) {
 
 $query = mysqli_query($connexion, "SELECT * from `utilisateurs` WHERE id=$user_id") or die("Requete échouée");
 $row = mysqli_fetch_array($query);
-?>
+$nameImage = $row['image']
+    ?>
 
 <html lang="en">
 
@@ -38,7 +39,11 @@ $row = mysqli_fetch_array($query);
         <div class=" selfItems">
 
             <div class='left'>
-                <img class="profile-avatar" src="../image/avatar.jpg" alt="Avatar">
+                <?php if (!isset($row['image'])): ?>
+                    <img class="profile-avatar" src="../image/avatar.jpg" alt="Avatar">
+                <?php else: ?>
+                    <img class="profile-avatar" src=<?= "../image/" . "$nameImage" ?> alt="Avatar">
+                <?php endif ?>
                 <strong class="title" style="color:white">
                     <?= $row['nom'] ?>
                 </strong>
