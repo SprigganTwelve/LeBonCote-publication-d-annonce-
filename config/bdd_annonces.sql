@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 21 jan. 2024 à 07:11
+-- Généré le : mer. 13 mars 2024 à 01:38
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -38,6 +38,17 @@ CREATE TABLE `annonces` (
   `image` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `annonces`
+--
+
+INSERT INTO `annonces` (`id`, `user_id`, `titre`, `description`, `date_publication`, `categorie`, `prix`, `image`) VALUES
+(1, 3, 'Hyundai Tucson 2023', ' Une voiture à vendre', '2024-03-02 03:58:25', 'Vehicules', 5464650, 'fond-ecran-pc-jujutsu-kaisen.jpg'),
+(2, 4, 'Solo Leveling', ' un truc très cher', '2024-03-03 04:44:54', 'Electronique', 1233990, ''),
+(3, 4, 'Leveling', ' ARTICLE GRATRUIT', '2024-03-03 04:45:49', 'Electronique', 0, '6ae83e04f10d228f4f90d19b80a3d6d9.jpg'),
+(4, 4, 'PS5 Limited Edition', ' GTHHHHHH', '2024-03-04 17:39:32', 'Electronique', 57575800, ''),
+(5, 4, 'GRGRHR', ' FDHDHDHDF', '2024-03-04 17:40:09', 'Electronique', 242424, 'desktop-wallpaper-4k-jujutsu-kaisen.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -49,15 +60,17 @@ CREATE TABLE `utilisateurs` (
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `image` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `password`) VALUES
-(1, 'ryomen', 'sukuna', 'ryomen.sukuna@jjk.com', '202cb962ac59075b964b07152d234b70');
+INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `password`, `image`) VALUES
+(1, 'sukuna', 'Ryomen', 'sukuna@jjk.com', '91b9d6bcc8e79a9ef87485f3a0ff1d80', 'fond-ecran-pc-jujutsu-kaisen.jpg'),
+(2, 'gojo', 'satoru', 'gojo@jjk.com', '41dd0c6b2001c8881a8502047e2967f3', 'gojo-extension-du-territoire.jpg');
 
 --
 -- Index pour les tables déchargées
@@ -84,13 +97,13 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `annonces`
 --
 ALTER TABLE `annonces`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Contraintes pour les tables déchargées
