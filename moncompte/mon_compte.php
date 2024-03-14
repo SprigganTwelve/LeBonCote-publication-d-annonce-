@@ -57,7 +57,7 @@ $nameImage = $row['image']
                     <div>
                         <p>
                             Email</br>
-                        <h2>
+                        <h2 class="rewrite">
                             <?= $row['email'] ?>
                         </h2>
                         </p>
@@ -66,7 +66,7 @@ $nameImage = $row['image']
                     <div>
                         <p>
                             Phone</br>
-                        <h2>
+                        <h2 class="rewrite">
                             Aucun
                         </h2>
                         </p>
@@ -77,7 +77,7 @@ $nameImage = $row['image']
 
                 <div class="foot">
                     <div>
-                        <strong>Recent</strong>
+                        <strong class="rewrite">Recent</strong>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium corporis nostrum
                             repellat
@@ -89,7 +89,7 @@ $nameImage = $row['image']
                         </p>
                     </div>
                     <div>
-                        <strong>Most viewed </strong>
+                        <strong class="rewrite">Most viewed </strong>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium corporis nostrum
                             repellat
@@ -115,6 +115,7 @@ $nameImage = $row['image']
     <?php
 
     ?>
+    <script src='app.js'></script>
 </body>
 
 </html>

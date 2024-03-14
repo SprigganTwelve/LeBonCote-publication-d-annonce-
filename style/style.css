@@ -152,6 +152,7 @@ a:hover {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  /* margin-bottom: 5px; */
 }
 
 .selfItems img {
@@ -240,4 +241,40 @@ footer {
   text-transform: uppercase;
 }
 
-/*--------------------------*/
+/*----------Pseudo element----------------*/
+
+/* rewrite element */
+
+.rewrite {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.rewrite:hover:before {
+  float: right;
+  margin: 5px;
+  content: "";
+  right: 0px;
+  top: 0px;
+  width: 1em;
+  height: 1em;
+  background: no-repeat;
+  background-position: center;
+  padding: 2px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24"  viewBox="0 -960 960 960" width="24"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>');
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  outline: none;
+  animation: appears ease 0.7s;
+  cursor: pointer;
+}
+
+@keyframes appears {
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
